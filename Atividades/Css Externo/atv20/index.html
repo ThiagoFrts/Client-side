@@ -1,0 +1,221 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+  .tw {
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+
+  .tw-header {
+    background: #1a1a2e;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tw-header h1 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  .tw-header span {
+    font-size: 12px;
+    color: #4ecdc4;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .tw-nav {
+    background: #16213e;
+    display: flex;
+    gap: 0;
+  }
+
+  .tw-nav a {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .tw-nav a:hover,
+  .tw-nav a.active {
+    color: #fff;
+    background: #0f3460;
+  }
+
+  .tw-banner {
+    background: #0f3460;
+    padding: 48px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tw-banner::before {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #4ecdc420;
+    z-index: 0;
+  }
+
+  .tw-banner::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #4ecdc415;
+    z-index: 0;
+  }
+
+  .tw-banner h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .tw-banner p {
+    color: #4ecdc4;
+    font-size: 14px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tw-cards {
+    display: flex;
+    gap: 16px;
+    padding: 28px;
+    background: #f5f5f5;
+  }
+
+  .tw-card {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 22px 20px;
+    position: relative;
+    border-top: 3px solid #0f3460;
+  }
+
+  .tw-card h3 {
+    color: #1a1a2e;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .tw-card p {
+    color: #888;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .tw-card-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #4ecdc415;
+    color: #0f3460;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .tw-footer {
+    background: #1a1a2e;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tw-footer p {
+    color: #666;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .tw-footer-links {
+    display: flex;
+    gap: 16px;
+  }
+
+  .tw-footer-links span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0f3460;
+  }
+
+  .tw-footer-links span:first-child {
+    background: #4ecdc4;
+  }
+</style>
+
+<div class="tw">
+  <header class="tw-header">
+    <h1>TechWorld</h1>
+    <span>Loja de Tecnologia</span>
+  </header>
+
+  <nav class="tw-nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="tw-banner">
+    <h2>Bem-vindo ao futuro</h2>
+    <p>Os melhores produtos de tecnologia para você</p>
+  </section>
+
+  <section class="tw-cards">
+    <div class="tw-card">
+      <span class="tw-card-badge">Destaque</span>
+      <h3>Notebook Gamer</h3>
+      <p>Alta performance</p>
+    </div>
+    <div class="tw-card">
+      <h3>Mouse RGB</h3>
+      <p>Precisão máxima</p>
+    </div>
+  </section>
+
+  <footer class="tw-footer">
+    <p>© Todos os direitos reservados — TechWorld</p>
+    <div class="tw-footer-links">
+      <span></span><span></span><span></span>
+    </div>
+  </footer>
+</div>

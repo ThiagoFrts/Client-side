@@ -1,0 +1,17 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.caixa {
+    background-color: #a00d0d;
+    font-family: arial;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    text-align: center;
+    padding: 15px;
+    opacity: 0.30;
+    
+}

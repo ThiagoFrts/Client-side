@@ -1,0 +1,20 @@
+ .banner {
+     font-family: Verdana;
+     font-size: large;
+     text-align: center;
+     color: aliceblue;
+    
+    
+
+
+ }
+
+
+ body {
+     background-image: url("res.avif"); height: 700px;
+     width: 1000px;
+     padding: 50px;
+     text-align: center;
+     
+     
+ }

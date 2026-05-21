@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor Top</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .head {
+            background-color: rgb(131, 3, 3);
+            color: white;
+            font-family: Arial;
+            padding: 26px;
+        }
+
+        .head h1 {
+            font-size: xx-large;
+            padding: 10px;
+        }
+
+        .head h3 {
+            color: #f7c5bc;
+            padding: 8px;
+        }
+
+        
+        nav {
+            background-color: rgba(182, 58, 58, 0.801);
+            padding: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            padding: 8px 10px;
+        }
+
+        nav ul a {
+            color: rgb(255, 253, 253);
+            text-decoration: none;
+            font-family: Arial;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        nav ul a:hover {
+            color: rgb(255, 220, 200);
+        }
+
+        
+        .conteudo {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        section {
+            flex: 1;
+        }
+
+       
+        article {
+            border: solid 1px rgb(240, 180, 160);
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 14px;
+            width: calc(100% - 40px);
+        }
+
+        article h2 {
+            font-size: x-large;
+            color: rgb(180, 50, 30);
+            margin-bottom: 10px;
+        }
+
+        article p {
+            color: #3a3939;
+            font-family: Verdana;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        
+        .tag-cardapio {
+            background-color: rgb(255, 200, 180);
+            color: rgb(180, 50, 30);
+            padding: 5px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 13px;
+            font-family: Arial;
+            margin-bottom: 15px;
+        }
+
+        .tag-historia {
+            background-color: rgb(230, 90, 60);
+            color: white;
+            padding: 5px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 13px;
+            font-family: Arial;
+            margin-bottom: 15px;
+        }
+
+       
+        .subtitulo-lista {
+            font-family: Arial;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(180, 50, 30);
+            padding: 10px 0 5px 0;
+        }
+
+        
+        article ul {
+            display: flex;
+            flex-direction: column;
+            list-style: disc;
+            padding-left: 30px;
+            color: #5F5E5A;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+
+        
+        article ol {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            color: #5F5E5A;
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+
+      
+        aside {
+            width: 220px;
+            min-width: 220px;
+            background-color: rgb(255, 255, 255);
+            border: solid 1px rgb(218, 181, 169);
+            border-radius: 10px;
+            margin: 20px 20px 20px 0;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        aside h3 {
+            font-size: 16px;
+            color: rgb(180, 50, 30);
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        .aside-tag {
+            background-color: rgb(255, 200, 180);
+            color: rgb(180, 50, 30);
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .prato-dia {
+            background-color: rgb(131, 3, 3);
+            color: white;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .prato-dia strong {
+            font-size: 15px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        aside ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding-left: 0;
+            font-size: 13px;
+            color: #5F5E5A;
+            line-height: 2;
+        }
+       
+        footer {
+            background-color: rgb(131, 3, 3);
+            color: rgb(255, 200, 180);
+            font-family: Arial;
+            font-size: 14px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: rgb(255, 220, 200);
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial; background-color: rgb(250, 240, 235);">
+
+    <header>
+        <div class="head">
+            <br>
+            <h1> Restaurante Sabor Top</h1><br>
+            <h3>Sabor e qualidade em cada prato</h3>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <div class="conteudo">
+
+        <section>
+
+            
+            <article>
+                <div class="tag-cardapio"><strong>Cardápio</strong></div>
+
+                <h2>Nosso Cardápio</h2>
+                <p>Confira os pratos disponíveis hoje no Sabor Top. Ingredientes frescos e muito sabor!</p>
+
+                <div class="subtitulo-lista">Itens disponíveis</div>
+                <ul>
+                    <li>Hambúrguer</li>
+                    <li>Pizza</li>
+                    <li>Refrigerante</li>
+                </ul>
+
+                <div class="subtitulo-lista">Como funciona</div>
+                <ol>
+                    <li>Escolha o prato</li>
+                    <li>Faça o pedido</li>
+                    <li>Aguarde</li>
+                    <li>Receba</li>
+                </ol>
+            </article>
+
+            
+            <article>
+                <div class="tag-historia"><strong>História</strong></div>
+
+                <h2>Nossa História</h2>
+                <p>
+                    O Restaurante Sabor Top nasceu em 2010 com um sonho simples: oferecer comida de qualidade
+                    a um preço acessível para toda a família. Começamos com apenas 5 mesas e hoje atendemos
+                    centenas de clientes por dia.
+                </p>
+                <p>
+                    Nossa equipe é formada por chefs apaixonados pela culinária, que se dedicam diariamente
+                    a criar pratos saborosos com ingredientes frescos e selecionados. Venha nos visitar e
+                    experimente o melhor da gastronomia local!
+                </p>
+            </article>
+
+        </section>
+
+       
+        <aside>
+            <div class="aside-tag">Promoções</div>
+            <h3>Ofertas de Hoje</h3>
+            <ul>
+                <li>Hambúrguer + Refri — R$ 25,00</li>
+                <li>Pizza G — R$ 39,90</li>
+                <li>Combo família — R$ 59,90</li>
+            </ul>
+
+            <br>
+
+            <div class="aside-tag">Prato do Dia</div>
+            <div class="prato-dia">
+                <strong>Pizza Margherita G</strong>
+                Molho de tomate, mussarela e manjericão fresco. Assada no forno a lenha.
+                <br><br>
+                <strong>R$ 34,90</strong>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <span>Rua do Sabor, 123 · 2025 Restaurante Sabor Top</span>
+        <div class="footer-links">
+            <a href="#">contato@sabortop.com</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(4, 4, 100);
+            font-family: arial;
+            padding: 30px;
+        }
+
+        a {
+            color: rgb(126, 178, 255);
+            text-decoration: none;
+            padding: 20px;
+            font-size: x-large;
+        }
+
+        a:hover {
+            color: rgb(255, 255, 255);
+        }

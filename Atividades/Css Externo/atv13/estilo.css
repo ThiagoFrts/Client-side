@@ -1,0 +1,38 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+
+}
+
+.login {
+    text-align: center;
+    font-family: arial;
+    font-size: xx-large;
+    border: solid 1px;
+    margin: 3px;
+    gap: 3px;
+    background-color: rgba(186, 253, 255, 0.301);
+    box-shadow: 10px 10px 10px;
+
+
+}
+
+h2 {
+    color: rgb(14, 12, 99);
+}
+
+button:hover {
+    color: rgb(220, 235, 238);
+    background-color: rgba(10, 34, 170, 0.747);
+
+}
+
+button{background-color: rgb(13, 13, 124);
+    color:aliceblue;
+    font-size: x-large;
+    
+
+}

@@ -1,0 +1,20 @@
+.vermelha {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: fixed;
+    top: 1000;
+    left: 100;
+    z-index: 10;
+}
+
+.azul {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.4;
+}

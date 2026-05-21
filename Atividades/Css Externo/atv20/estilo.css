@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+h1 {
+    background-color: rgb(9, 9, 88);
+    padding: 30px;
+    font-family: verdana;
+    color: rgb(207, 233, 255);
+}
+
+nav {
+    background-color: rgb(13, 0, 126);
+    justify-content: space-around;
+    padding: 20px;
+    font-size: large;
+}
+
+
+a {
+    color: rgb(191, 217, 255);
+    text-decoration: none;
+    padding: 20px;
+    font-size: large;
+    font-family: arial;
+
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}

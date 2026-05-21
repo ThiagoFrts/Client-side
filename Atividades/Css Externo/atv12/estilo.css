@@ -1,0 +1,22 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .galeria {
+        display: flex;
+        border: solid px;
+        gap: 5px;
+        padding: 50px;
+        justify-content: space-around;
+        background-color: rgb(134, 131, 126);
+
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+
+    }

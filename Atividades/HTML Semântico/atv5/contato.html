@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — GameZone News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(15, 15, 25);
+            color: white;
+        }
+
+        .head {
+            background-color: rgb(20, 20, 35);
+            border-bottom: 3px solid rgb(100, 60, 200);
+            padding: 20px 30px;
+        }
+
+        .head h1 {
+            font-size: xx-large;
+            color: rgb(180, 140, 255);
+        }
+
+        .head p {
+            color: rgb(150, 150, 180);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        nav {
+            background-color: rgb(30, 30, 50);
+            padding: 0 30px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+        }
+
+        nav ul a {
+            color: rgb(180, 180, 210);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 14px 18px;
+            display: block;
+        }
+
+        nav ul a:hover {
+            color: rgb(180, 140, 255);
+        }
+
+        nav ul a.ativo {
+            color: rgb(180, 140, 255);
+        }
+
+        .conteudo {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px 30px;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pagina-titulo {
+            font-size: x-large;
+            color: rgb(180, 140, 255);
+            margin: 20px 30px 0 30px;
+            border-left: 4px solid rgb(100, 60, 200);
+            padding-left: 12px;
+        }
+
+        article {
+            background-color: rgb(25, 25, 40);
+            border: 1px solid rgb(60, 60, 90);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        article h2 {
+            font-size: large;
+            color: rgb(180, 140, 255);
+            margin-bottom: 12px;
+        }
+
+        article h3 {
+            color: rgb(200, 180, 255);
+            font-size: 15px;
+            margin: 12px 0 6px 0;
+        }
+
+        article p {
+            color: rgb(180, 180, 200);
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        article ul {
+            display: flex;
+            flex-direction: column;
+            list-style: disc;
+            padding-left: 25px;
+            color: rgb(180, 180, 200);
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 10px;
+        }
+
+        article ol {
+            display: flex;
+            flex-direction: column;
+            padding-left: 25px;
+            color: rgb(180, 180, 200);
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background-color: rgb(100, 60, 200);
+            border-radius: 8px;
+            padding: 14px;
+            font-size: 14px;
+            color: white;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .info-box strong {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        aside {
+            width: 240px;
+            min-width: 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .aside-box {
+            background-color: rgb(25, 25, 40);
+            border: 1px solid rgb(60, 60, 90);
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .aside-box h3 {
+            color: rgb(180, 140, 255);
+            font-size: 15px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgb(60, 60, 90);
+            padding-bottom: 8px;
+        }
+
+        .aside-box ul {
+            list-style: none;
+            font-size: 13px;
+            color: rgb(180, 180, 200);
+            line-height: 2;
+        }
+
+        .aside-box ul li {
+            border-bottom: 1px solid rgb(40, 40, 60);
+            padding: 4px 0;
+        }
+
+        .aside-box ul li:last-child { border-bottom: none; }
+
+        .aside-box ol {
+            padding-left: 20px;
+            font-size: 13px;
+            color: rgb(180, 180, 200);
+            line-height: 2;
+        }
+
+        footer {
+            background-color: rgb(20, 20, 35);
+            border-top: 3px solid rgb(100, 60, 200);
+            color: rgb(150, 150, 180);
+            font-size: 13px;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer-links { display: flex; gap: 20px; }
+
+        .footer-links a {
+            color: rgb(180, 140, 255);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="head">
+            <h1> GameZone News</h1>
+            <p>As melhores notícias do mundo dos games</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class="pagina-titulo"> Contato</h2>
+
+    <div class="conteudo">
+        <section>
+
+            <article>
+                <h2> Fale Conosco</h2>
+                <p>Entre em contato com a equipe do GameZone News para enviar sugestões de pautas, parcerias ou dúvidas.</p>
+
+                <div class="info-box">
+                    <strong> Informações de contato:</strong>
+                     contato@gamezonenews.com.br <br>
+                     Instagram: @gamezonenews <br>
+                    Discord: discord.gg/gamezonenews
+                </div>
+
+                <h3>Você pode entrar em contato para:</h3>
+                <ul>
+                    <li>Sugerir uma notícia ou pauta</li>
+                    <li>Propor uma parceria</li>
+                    <li>Reportar um erro no site</li>
+                    <li>Enviar seu review de jogo</li>
+                    <li>Fazer parte da equipe</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2> Nossa Equipe</h2>
+                <p>O GameZone News é feito por gamers apaixonados que trabalham diariamente para trazer as melhores notícias do mundo dos games.</p>
+
+                <h3>Como nossa equipe trabalha:</h3>
+                <ol>
+                    <li>Monitoramos as principais fontes de notícias</li>
+                    <li>Verificamos as informações antes de publicar</li>
+                    <li>Escrevemos com linguagem acessível</li>
+                    <li>Publicamos diariamente</li>
+                    <li>Respondemos os comentários dos leitores</li>
+                </ol>
+
+                <h3>Áreas da redação:</h3>
+                <ul>
+                    <li>Editoria de lançamentos</li>
+                    <li>Editoria de reviews</li>
+                    <li>Editoria de esports</li>
+                    <li>Editoria de hardware</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <aside>
+
+            <div class="aside-box">
+                <h3> Nossas Redes</h3>
+                <ul>
+                    <li> Instagram</li>
+                    <li> YouTube</li>
+                    <li> Discord</li>
+                    <li> Twitter/X</li>
+                    <li> Facebook</li>
+                </ul>
+            </div>
+
+            <div class="aside-box">
+                <h3>Horário de Atendimento</h3>
+                <ol>
+                    <li>Segunda — 09h às 18h</li>
+                    <li>Terça — 09h às 18h</li>
+                    <li>Quarta — 09h às 18h</li>
+                    <li>Quinta — 09h às 18h</li>
+                    <li>Sexta — 09h às 17h</li>
+                </ol>
+            </div>
+
+        </aside>
+    </div>
+
+    <footer>
+        <span> GameZone News  2025 · Todos os direitos reservados</span>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </footer>
+
+</body>
+</html>
