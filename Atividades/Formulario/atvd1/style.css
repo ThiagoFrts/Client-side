@@ -1,0 +1,29 @@
+h2 {
+  font-family: arial;
+  text-align: center;
+  font-size: xx-large;
+  margin: 30px;
+}
+
+form {
+  border: solid 1px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(20, 7, 93);
+  width: 250px;
+}
+
+label{color: aliceblue;
+font-family: sans-serif;
+}
+
+.button input:hover {
+  background-color: rgb(150, 157, 237);
+  cursor: pointer;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
