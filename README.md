@@ -7,7 +7,6 @@ Repositório criado para armazenar atividades, exercícios e projetos desenvolvi
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap
 
 ## Objetivo
 Praticar desenvolvimento web e aprimorar conhecimentos em programação e criação de interfaces responsivas.
