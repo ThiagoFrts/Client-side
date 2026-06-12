@@ -1,3 +1,0 @@
-function segredo(){
-alert ("buuuuuh")
-}
