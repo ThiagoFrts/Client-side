@@ -1,0 +1,3 @@
+function medroso(){
+alert ("BUUUUUUUUH!!!!")
+}

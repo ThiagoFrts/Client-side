@@ -1,0 +1,2 @@
+function medroso(){
+}alert ("Preguiçoso")
