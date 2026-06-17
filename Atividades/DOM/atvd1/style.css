@@ -1,0 +1,10 @@
+#qua {
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(115, 115, 115);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
