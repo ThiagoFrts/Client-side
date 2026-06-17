@@ -1,0 +1,11 @@
+#cir {
+  border-radius: 100px;
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(160, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
