@@ -1,0 +1,22 @@
+#qua {
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(24, 24, 140);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#cir {
+  border-radius: 100px;
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(147, 5, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
