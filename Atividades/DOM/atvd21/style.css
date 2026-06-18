@@ -1,0 +1,9 @@
+#caixa {
+    width: 250px;
+    height: 100px;
+    background-color: rgb(8, 85, 8);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 10px;
+}
